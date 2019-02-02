@@ -38,7 +38,7 @@ then
 fi
 
 # Verify whether we are in the local network
-onLocalLAN=$(ip a | grep 192.168.2)
+onLocalLAN=$(ip a | grep $localLANprefix)
 
 if [[ -n $onLocalLAN ]] 
 then
